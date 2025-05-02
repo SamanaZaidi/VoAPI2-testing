@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Jellyfin API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8096
+paths:
+  /Images/Remote:
+    get:
+      summary: SSRF endpoint test
+      parameters:
+        - name: imageUrl
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK

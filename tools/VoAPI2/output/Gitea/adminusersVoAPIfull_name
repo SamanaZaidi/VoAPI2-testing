@@ -1,0 +1,39 @@
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /admin/users
+Vul API Method: Post
+API Vul Param: full_name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/admin/usersVoAPIfull_name'>
+
+API Vul Type: xss
+Vul API Url: /admin/users
+Vul API Method: Post
+API Vul Param: full_name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/admin/usersVoAPIfull_name'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /admin/users
+Vul API Method: Post
+API Vul Param: full_name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/admin/usersVoAPIfull_name'>
+
+API Vul Type: xss
+Vul API Url: /admin/users
+Vul API Method: Post
+API Vul Param: full_name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/admin/usersVoAPIfull_name'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /admin/users
+Vul API Method: Post
+API Vul Param: full_name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/admin/usersVoAPIfull_name'</script>
+
+API Vul Type: xss
+Vul API Url: /admin/users
+Vul API Method: Post
+API Vul Param: full_name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/admin/usersVoAPIfull_name'</script>
+

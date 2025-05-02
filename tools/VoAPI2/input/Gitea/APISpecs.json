@@ -1,0 +1,102 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Gitea API",
+      "version": "1.16.7"
+    },
+    "paths": {
+      "/repos/{owner}/{repo}/contents/{filepath}content": {
+        "post": {
+          "summary": "Unrestricted Upload CVE-2022-1928",
+          "description": "This is the vulnerable upload endpoint where files can be uploaded without proper validation, leading to potential security issues.",
+          "parameters": [
+            {
+              "name": "owner",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "repo",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "filepath",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "content",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "content": {
+                    "type": "string"
+                  },
+                  "branch": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "File uploaded successfully"
+            },
+            "400": {
+              "description": "Bad request"
+            }
+          }
+        }
+      },
+      "/repos/{owner}/{repo}/hooks": {
+        "post": {
+          "summary": "SSRF Vulnerability",
+          "description": "Test for SSRF vulnerabilities in the webhooks by sending a URL manipulation payload.",
+          "parameters": [
+            {
+              "name": "owner",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "repo",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "description": "The URL that the hook will call, potentially manipulated for SSRF testing"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Webhook created successfully"
+            },
+            "400": {
+              "description": "Bad request"
+            }
+          }
+        }
+      }
+    }
+  }
+  

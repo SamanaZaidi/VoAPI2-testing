@@ -1,0 +1,10 @@
+{
+    "/repos/{owner}/{repo}/hooks": {
+      "post": {
+        "body": {
+          "url": "http://{{verification_server_ip}}:{{verification_server_port}}"
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,54 @@
+openapi: 3.0.0
+info:
+  title: Gitea API
+  version: "1.16.7"
+servers:
+  - url: http://localhost:3000
+paths:
+  /repos/{owner}/{repo}/contents/{filepath}content:
+    post:
+      summary: Upload file
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: filepath
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+      responses:
+        '200':
+          description: File uploaded
+
+  /repos/{owner}/{repo}/hooks:
+    post:
+      summary: Create webhook (SSRF test)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+      responses:
+        '200':
+          description: Webhook created
